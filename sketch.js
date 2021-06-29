@@ -45,10 +45,12 @@ function keyPressed(){
 
 	if(paper.body.position.x>1100){
 		Matter.Body.applyForce(paper.body,paper.body.position,{x:0,y:20})
+				background(random(0,255),random(0,255),random(0,255))
 		textSize(100)
+
 fill('green')
 		text('winner',width/2-100,height/2)
-		background(random(0,255),random(0,255),random(0,255))
+
 	}
 
 	
